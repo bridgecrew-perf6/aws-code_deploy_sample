@@ -1,6 +1,5 @@
 ﻿version: 0.2
 
-env:
 variables:
 PROJECT: AspNetMvcSampleApp
 DOTNET_FRAMEWORK: 4.8.0
