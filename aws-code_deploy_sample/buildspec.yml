@@ -1,7 +1,7 @@
 ﻿version: 0.2
 env:
   variables:
-    PROJECT: AspNetMvcSampleApp
+    PROJECT: aws-code_deploy_sample
     DOTNET_FRAMEWORK: 4.8.0
 phases:
   build:
