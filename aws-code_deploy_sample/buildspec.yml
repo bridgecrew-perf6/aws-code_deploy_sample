@@ -7,7 +7,8 @@ phases:
   build:
     commands:
       - nuget restore
-      - cd aws-code_deploy_sample      
+      - cd aws-code_deploy_sample
+      - choco install visualstudio2019buildtools -y
       - msbuild aws-code_deploy_sample.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\ /t:Package
 artifacts:
   files:
