@@ -6,6 +6,7 @@ env:
 phases:
   build:
     commands:
+      - cd aws-code_deploy_sample
       - nuget restore
       - msbuild aws-code_deploy_sample.csproj /p:TargetFrameworkVersion=v$env:DOTNET_FRAMEWORK /p:Configuration=Release /p:DeployIisAppPath="Default Web Site" /p:PackageAsSingleFile=false /p:OutDir=C:\codebuild\artifacts\ /t:Package
 artifacts:
